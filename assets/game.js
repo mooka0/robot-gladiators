@@ -132,4 +132,4 @@ var endGame = function () {
 // fight();
 
 //start the game when the page loads
-//startGame();
+startGame();
