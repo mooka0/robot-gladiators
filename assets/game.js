@@ -25,12 +25,10 @@ var fightOrSkip = function() {
 
 
 var fight = function(enemy) {
-  while (playerInfo.health > 0 && enemy.health > 0) {
-    // ask player if they'd liked to fight or run
-    var promptFight = window.prompt('Would you like FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
-
-    // if player picks "skip" confirm and then stop the loop
-    if (promptFight === "skip" || promptFight === "SKIP") {
+  // repeat and execute as long as the enemy-robot is alive 
+while(enemy.health > 0 && playerInfo.health > 0) {
+  fightOrSkip(); // <-- Replace code with this function call
+  var damage = randomNumber(playerInfo.attack - 3, playerInfo.attack); {
       // confirm player wants to skip
       var confirmSkip = window.confirm("Are you sure you'd like to quit?");
 
