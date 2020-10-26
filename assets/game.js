@@ -44,7 +44,7 @@ while(enemy.health > 0 && playerInfo.health > 0) {
       };
   
     
-    
+
 
     // remove enemy's health by subtracting the amount set in the playerInfo.attack variable
    // generate random damage value based on player's attack power
