@@ -130,7 +130,7 @@ var getPlayerName = function() {
     name = prompt("What is your robot's name?");
   }
 
-  console.log(""Your robot's name is "" + name);
+  console.log("Your robot's name is " + name);
   return name;
 
 };
